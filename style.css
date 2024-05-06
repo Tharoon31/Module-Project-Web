@@ -1,0 +1,296 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    background-color: #43c0cc;
+    font-family: 'Poppins', sans-serif;
+    color: #162938;
+    background-image:url('n.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-signup-body {
+    background-color: #99e9e9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0; width: 100%;
+padding: 20px 100px; background:#35ded8;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 99;
+}
+.logo {
+    font-size: 2em;
+    color:#fff;
+    user-select: none;
+
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color:#000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s; 
+}
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:#000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: background-color 2s ease-out 1s;
+}
+
+/* .navigation .btnlogin-popup:hover {
+   -webkit-transition: ease-out 0.4s;
+   -moz-transition: ease-out 0.4s;
+    box-shadow: inset 400px 0 0 0 #2cd3ce;
+    /* background:  #fff; */
+/* olor: #162938; */
+
+
+.wrapper {
+    right:411px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background:#ffffff;    ;   
+    border: 2px solid rgba(225, 225, 225, 5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 5);
+    /* background-image: url("./java-bg-img.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form_box {
+    width: 100%;
+    padding: 40px;
+    margin: 30px;
+}
+
+.form_box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+/*****here is a bug for type box****/
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+    background: transparent;
+}
+
+.input-box lable {
+    position:absolute;
+    top: 40;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    padding-bottom: 15px;
+}
+
+/********input box for giving username***/
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none; 
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+    position: relative;
+     
+}
+
+ .input-box input:focus~lable,
+ .input-box input:valid~lable{
+    top: 0px;
+ }
+
+ .forgot-password {
+    font-size: .9em;
+     color: #162938;
+     font-weight: 500;
+     margin: -15px 0 15px;
+     display: flex;
+     justify-content: space-between;  
+ }
+
+ .forgot-password .a {
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    background-color: #21bcca;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+ }
+
+ .signup-login-link {
+    text-decoration: underline;
+ }
+ .signup--login-link:hover {
+    font-weight: 800;
+    cursor:pointer;
+ }
+
+ .loginbtn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    background-color: #050808;
+    border-radius: 15px;
+    border: 1px solid #000;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: transform ease-in 100ms;
+ }
+
+ .loginbtn:hover {
+    transform: scale(1.05);
+ }
+
+ .Login_register {
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+ }
+
+ .Login_register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ .Login_register p a:hover {
+    text-decoration: underline;
+ }
+
+ /******prefect for login/signup******/
+
+ /******competency page starts*****/
+ .competency_box .btn {
+    display: inline-block;
+    padding: 16px 10px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    border-radius: 35px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.competency_box .btn:hover {
+    background-color: #4EB33E;
+}
+
+/* Add the following CSS to style the logout button */
+
+.btnlogout {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #35ded8;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+    border: 2px #fff;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnlogout:hover {
+    background-color: #fff;
+    color: #162938;
+}
+
+/*******competency page ebd here*****/
+
+/******* TOPIC LEVEL PAGE ******/
+
+
+
+.level-box {
+    border: 1px solid #4EB33E;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
